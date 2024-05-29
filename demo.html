@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Overflow Hidden</title>
+    <style>
+        .container {
+            position: relative;
+            width: 300px;  /* Set the width of the container */
+            height: 300px; /* Set the height of the container */
+            overflow: hidden; /* Hide overflow */
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+        }
+
+        .container img {
+            position: absolute;
+            object-fit: cover;
+            /* Set the size of the image */
+            min-width: 100%;
+            min-height: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <img src="/images/About us text.png" alt="Image">
+</div>
+
+</body>
+</html>
